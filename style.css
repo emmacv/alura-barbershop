@@ -17,7 +17,11 @@ body {
   height: 100%;
 }
 
-p {
+.main-title {
+  padding-left: 30px;
+}
+
+p, .center-heading {
   text-align: center;
 }
 
@@ -50,7 +54,7 @@ ul {
   display: inline-block;
   vertical-align: top;
   width: 30%;
-  margin-rigth: 15%;
+  margin-right: 15%;
 }
 
 .items {
