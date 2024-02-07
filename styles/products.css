@@ -2,6 +2,19 @@
 
 header {
   background-color: #bbb;
+  padding: 1.5em;
+}
+
+.container {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 110px;
 }
 
 nav li {
@@ -15,8 +28,4 @@ nav a {
   font-weight: bold;
   font-size: 1.5em;
   text-decoration: none;
-}
-
-.navigation {
-
 }
