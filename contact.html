@@ -31,32 +31,43 @@
   </header>
   <main>
     <form action="">
-      <label for="nombre-apellido">Nombre y apellido</label><input type="text" id="nombre-apellido">
+      <label for="nombre-apellido">Nombre y apellido</label><input type="text" id="nombre-apellido"
+        class="input-padron">
 
-      <label for="correo-electronico">Correo electrónico</label><input type="text" id="correo-electronico">
+      <label for="correo-electronico">Correo electrónico</label><input type="text" id="correo-electronico"
+        class="input-padron">
 
-      <label for="telefono">Teléfono</label><input type="text" id="telefono">
+      <label for="telefono">Teléfono</label><input type="text" id="telefono" class="input-padron">
 
       <label for="mensaje">Mensaje</label>
-      <textarea name="" id="mensaje" cols="70" rows="10"></textarea>
+      <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
       <div>
-        <p>¿Cómo le gustaría ser contactado?</p>
+        <p class="test" id="test">¿Cómo le gustaría ser contactado?</p>
 
-        <label for="email">Email</label>
-        <input type="radio" name="contacto" id="email" value="email">
-        <label for="radio-telefono">Teléfono</label>
-        <input type="radio" name="contacto" id="radio-telefono" value="telefono">
-        <label for="whatsapp">WhatsApp</label>
-        <input type="radio" name="contacto" id="whatsapp" value="whatsapp">
+        <label for="email">
+          <input type="radio" name="contacto" id="email" value="email">
+          Email
+        </label>
+        <label for="radio-telefono">
+          <input type="radio" name="contacto" id="radio-telefono" value="telefono">
+          Teléfono
+        </label>
+        <label for="whatsapp">
+          <input type="radio" name="contacto" id="whatsapp" value="whatsapp">
+          WhatsApp
+        </label>
       </div>
 
-      <input type="checkbox" name="" id="checkbox-contacto">
-      <label for="checkbox-contacto">¿Le gustaría ser contactado para saber más novedades?</label>
+      <label for="checkbox-contacto" class="checkbox">
+        <input type="checkbox" name="" id="checkbox-contacto">
+        ¿Le gustaría ser contactado para saber más novedades?
+      </label>
 
       <input type="submit" value="Enviar formulario">
     </form>
   </main>
-  <footer>
+  <span class="span-test" data-span="test">test</span>
+  <footer class="footer">
     <img src="assets/img/logo-blanco.png" alt="" sizes="" srcset="">
     <p class="copyright">&copy; Barbería Alura - 2024</p>
   </footer>

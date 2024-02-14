@@ -58,7 +58,7 @@ nav a:hover {
   border-color: #c78c19;
 }
 
-.products li:hover h2{
+.products li:hover h2 {
   font-size: 2em;
 }
 
@@ -106,8 +106,11 @@ form {
   margin: 40px 0;
 }
 
-form label, form input {
+form label,
+form p {
   display: block;
+  font-size: 1.5em;
+  margin: 0 0 10px;
 }
 
 form label {
@@ -115,7 +118,8 @@ form label {
   margin-bottom: 10px;
 }
 
-form input {
+.input-padron {
+  display: block;
   width: 50%;
   margin-bottom: 20px;
   margin: 0 0 20px;
@@ -123,3 +127,31 @@ form input {
   font-size: 1.25em;
 }
 
+.checkbox {
+  margin: 1.5em 0;
+}
+
+/* form p {
+  color: blue;
+}
+
+[class="test"] {
+  color: green;
+}
+
+p[class="test"] {
+  color: yellow;
+}
+
+
+p {
+  color: red;
+}
+
+[data-span="test"] {
+  color: blue;
+}
+
+span {
+  color: red;
+} */
