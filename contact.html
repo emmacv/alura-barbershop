@@ -35,14 +35,15 @@
         class="input-padron">
 
       <label for="correo-electronico">Correo electrónico</label><input type="email" id="correo-electronico"
-        class="input-padron">
+        class="input-padron" placeholder="email@dominio.com" required>
 
-      <label for="telefono">Teléfono</label><input type="tel" id="telefono" class="input-padron">
+      <label for="telefono">Teléfono</label><input placeholder="(xx) xxxx xxxx" type="tel" id="telefono"
+        class="input-padron" required>
 
       <label for="mensaje">Mensaje</label>
-      <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
-      <div>
-        <p class="test" id="test">¿Cómo le gustaría ser contactado?</p>
+      <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+      <fieldset>
+        <legend class="test" id="test">¿Cómo le gustaría ser contactado?</legend>
 
         <label for="email">
           <input type="radio" name="contacto" id="email" value="email">
@@ -53,12 +54,12 @@
           Teléfono
         </label>
         <label for="whatsapp">
-          <input type="radio" name="contacto" id="whatsapp" value="whatsapp">
+          <input type="radio" name="contacto" id="whatsapp" value="whatsapp" checked required>
           WhatsApp
         </label>
-      </div>
+      </fieldset>
       <div>
-        <p>¿En qué horario quiere ser atendido?</p>
+        <legend>¿En qué horario quiere ser atendido?</legend>
         <select>
           <option value="">Mañana</option>
           <option value="">Tarde</option>
@@ -66,11 +67,11 @@
         </select>
       </div>
       <label for="checkbox-contacto" class="checkbox">
-        <input type="checkbox" name="" id="checkbox-contacto">
+        <input type="checkbox" name="" id="checkbox-contacto" checked>
         ¿Le gustaría ser contactado para saber más novedades?
       </label>
 
-      <input type="submit" value="Enviar formulario">
+      <input type="submit" class="enviar" value="Enviar formulario">
     </form>
   </main>
   <footer class="footer">
