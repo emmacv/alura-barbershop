@@ -176,3 +176,18 @@ p {
 span {
   color: red;
 } */
+
+table {
+  margin: 40px;
+}
+
+thead {
+  background-color: #555;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #000;
+  padding: 8px 15px;
+}
