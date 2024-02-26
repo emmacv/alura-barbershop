@@ -192,13 +192,29 @@ th {
   padding: 8px 15px;
 }
 
-
+p::first-line{
+  font-style: italic;
+}
 
 .main-title {
   text-align: center;
   font-size: 2em;
   margin: 0 0 1em;
   line-height: 1em;
+  color: rgba(0, 0, 0, 30%);
+
+  &::first-letter{
+    font-weight: bold;
+    color: #c78c19;
+  }
+
+  &::before {
+    content: "[";
+  }
+
+  &::after {
+    content: "]";
+  }
 }
 
 .main {
@@ -237,6 +253,7 @@ th {
 
 .image-differentiations {
   width: 60%;
+  box-shadow: 1px 2px 1px 2px #000;
 }
 
 .items {
@@ -244,6 +261,11 @@ th {
 
   &:first-child {
     font-weight: bold;
+  }
+
+  &::before {
+    content: "\002605";
+    margin-right: 0.5em;
   }
 }
 
@@ -267,8 +289,9 @@ th {
     text-align: center;
   }
 
-  & iframe {
+  & div {
     width: 940px;
     margin: 0 auto;
   }
+
 }
