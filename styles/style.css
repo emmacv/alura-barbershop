@@ -217,10 +217,14 @@ p::first-line{
   }
 }
 
+.banner {
+  width: 100%;
+}
+
 .main {
   background: #fefefefe;
   padding: 3em 0;
-  width: 1200px;
+  max-width: 940px;
   margin: 0 auto;
 
   & p {
@@ -294,4 +298,20 @@ p::first-line{
     margin: 0 auto;
   }
 
+}
+
+@media only screen and (width <= 480px) {
+  h1{
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container, .main, .video, .content-differentiations, .maps div {
+    width: auto;
+  }
 }
